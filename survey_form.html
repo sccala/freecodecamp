@@ -1,0 +1,219 @@
+<DOCTYPE HTML>
+<header class="header">
+    <h1 id="title">freeCodeCamp Survey Form
+    </h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form" required>
+    
+<body>
+    <form id="survey-form">
+        <div class="form_group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required="">
+        </div>
+        <div class="form_group">
+            <label id="email-label" for="name">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required >
+        </div>
+        <div class="form_group">
+            <label id="number-label" for="name">Number</label>
+            <input type="number" name="number" id="number" placeholder="Enter your number" required minlength="12">
+        </div>
+            <p>Which option best describes your current role?</p>
+              <select id="dropdown" name="role" class="form-control" required="" >
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+                </select>
+       <div class="form_group">
+           <p>What is your favorite feature of freeCodeCamp?</p>
+           <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+            </select>
+           <label id="email" for="name">Number</label>
+            <input type="number" name="number" id="number" placeholder="Enter your number" required="">
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects
+                </label>
+                <label> 
+                    <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization
+                </label>
+                <label>
+                    <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges
+                </label>
+                <label>
+                    <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community
+                </label>
+                <label>
+                    <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter help rooms
+                </label>
+                <label>
+                    <input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos
+                </label>
+                <label>
+                    <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups
+                </label>
+                <label>
+                    <input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki
+                </label>
+                <label>
+                    <input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum
+                </label>
+                <label>
+                    <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses
+                </label>
+        </div>
+        <div class="form_group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+        
+<style>
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+#survey-form {
+    width: 100%;
+    margin: 10% ;
+    padding:40px;
+    background-color:black;
+    display: relative;
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+#title{
+   text-align: center;
+    }
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+@media (min-width: 768px) {
+#survey-form {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+#survey-form {
+    max-width: 540px;
+  }
+}
+    
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+    
+    @media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+</style>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
