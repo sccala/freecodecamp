@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <header id="header">
+    <nav id="nav-bar" role="navigation">
+      <ul>
+        <li class="autoSize"><img id="header-img" src="manekilogo.png" alt="company logo" />Lucky Charm</li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+    <div class="container intro">
+      <div>
+        <h2>Buy manekineko for better luck</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus iaculis tempor. Mauris laoreet condimentum tincidunt. Fusce ultrices
+          leo felis, in volutpat leo tincidunt quis. Ut commodo tellus et enim vulputate, quis vulputate quam semper. Duis eu ipsum tortor. Proin
+          blandit neque risus, ut tincidunt felis tristique dictum.
+        </p>
+      </div>
+      <img id="intro-img" src="maneki1.png" alt="image cannot display" />
+    </div>
+  </div>
+
+  <h3 id="storyheader">Watch a Story</h3>
+  <div id="story">
+    <iframe
+      id="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/1_oc9Kd1vrI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <form class="container" id="form" action="/action_page.php">
+    <label for="fname">Email:</label>
+    <input type="text" value="email" id="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" /><br />
+    <input id="submit" onclick="" type="submit" value="Submit" />
+  </form>
+
+  <footer class="footer">
+    <container> @scoffice 2021 </container>
+  </footer>
+
+  <!-- css -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
+    body {
+      margin: 0px;
+      padding: 0px;
+      /* background-color: #ecacfc; */
+      font-family: 'Montserrat', sans-serif;
+    }
+    header {
+      position: fixed;
+      padding: 2%;
+      top: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 70px;
+      background-color: #38383852;
+      z-index: 1;
+      
+    }
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+    }
+    header nav li {
+      display: inline;
+      vertical-align: middle;
+      
+    }
+
+    header nav li img {
+      vertical-align: middle;
+    }
+
+    .autoSize {
+      width: inherit;
+    }
+    .autoSize img {
+      width: 25%;
+    }
+
+    #nav-bar {
+      margin: 0px;
+      padding: 0px;
+    }
+    #nav-bar a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      float: right;
+      padding-right: 5%;
+      color: rgb(255, 255, 255);
+      line-height: 60pt;
+      
+    }
+    #header-img {
+      width: 50px;
+      height: 100%;
+      padding: 1%;
+    }
+
+    .container {
+      margin: 3%;
+      display: flex;
+      height: 50vh;
+      align-items: center;
+    }
+
+    h1 {
+      font-family: 'Abril Fatface', cursive, 'Montserrat', sans-serif;
+      font-size: 54px;
+    }
+    h2 h3 h4 h5 h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+    }
+    #nav-bar {
+      font-family: 'Abril Fatface', cursive, 'Montserrat', sans-serif;
+      font-size: 42px;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      width: 100%;
+    }
+
+    .intro {
+      position: relative;
+      margin-top: 110px;
+    }
+    
+    #intro-img {
+      width: 50%;
+      height: auto;
+      margin-left: 3%;
+    }
+    #story {
+      margin: 3%;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #storyheader {
+      height: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #video {
+      align-items: center;
+    }
+
+    #form {
+      position: relative;
+      align-items: center;
+    }
+
+    .footer {
+      background-color: lightgrey;
+      text-align: right;
+      padding: 40px 5%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+  </style>
+  <!-- js -->
+
+  <script></script>
+</html>
